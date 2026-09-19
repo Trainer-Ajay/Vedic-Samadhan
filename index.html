@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<title>Vedic Samadhan — Consultations with Pundit Vidyanand Shukla</title>
+<meta name="description" content="Book Vedic astrology consultations and pooja samadhan with Pundit Vidyanand Shukla, Bihar. Quick, secure, on WhatsApp.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🕉️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Eczar:wght@500;600;700&family=Mukta:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ DISCLAIMER GATE ============ -->
+<div id="gate" class="gate">
+  <div class="gate-card">
+    <div class="gate-om">🕉️</div>
+    <h2>Before You Enter</h2>
+    <p id="gate-text" class="gate-text"></p>
+    <label class="gate-check">
+      <input type="checkbox" id="gate-accept">
+      <span>I have read and understood this, and wish to continue</span>
+    </label>
+    <button id="gate-enter" class="btn btn-primary btn-block" disabled>Enter Vedic Samadhan</button>
+  </div>
+</div>
+
+<!-- ============ HEADER / DARSHAN BANNER ============ -->
+<header class="banner">
+  <div class="banner-photo" aria-hidden="true">
+    <div class="photo-placeholder">
+      <span class="photo-glyph">🕉️</span>
+      <span class="photo-hint">Pundit Ji's photograph goes here<br><small>replace .photo-placeholder in style.css / swap in an &lt;img&gt;</small></span>
+    </div>
+  </div>
+  <div class="banner-overlay"></div>
+  <div class="banner-content">
+    <p class="eyebrow-free" id="pundit-title"></p>
+    <h1 id="pundit-name"></h1>
+    <p class="tagline" id="tagline"></p>
+    <div class="counter-pill" id="blessed-counter"></div>
+  </div>
+</header>
+
+<!-- ============ PANCHANG TICKER ============ -->
+<div class="ticker">
+  <div class="ticker-inner" id="ticker-inner"></div>
+</div>
+
+<!-- ============ NAV ============ -->
+<nav class="nav">
+  <button class="nav-link active" data-view="home">Home</button>
+  <button class="nav-link" data-view="consultations">Consultations</button>
+  <button class="nav-link" data-view="poojas">Poojas</button>
+  <button class="nav-link" data-view="daan">Daan Guidance</button>
+  <button class="nav-link" data-view="contact">Contact</button>
+</nav>
+
+<main id="app"></main>
+
+<footer class="site-footer">
+  <p><strong id="footer-name"></strong> — <span id="footer-title"></span></p>
+  <p class="footer-small">All bookings are confirmed manually over WhatsApp after payment. See disclaimer for details.</p>
+</footer>
+
+<!-- ============ BOOKING MODAL ============ -->
+<div id="booking-modal" class="modal-overlay" hidden>
+  <div class="modal">
+    <button class="modal-close" id="modal-close" aria-label="Close">✕</button>
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
